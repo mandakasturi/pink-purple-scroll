@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        #container{
+            width: 80%;
+            aspect-ratio: 2/1;
+            margin: auto;
+            overflow-x:scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+        }
+        .purple{
+            background-color: purple;
+            height: 95%;
+            aspect-ratio: 1/1;
+        }
+        .pink{
+            background-color: lightpink;
+            height: 80%;
+            aspect-ratio: 1/2;
+        }
+        .purple,.pink{
+            display: inline-block;
+            margin: 2px;
+            scroll-snap-align: none start;
+            scroll-margin-inline: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>SCROLLING</h1> <br>
+    <p>n computer displays, filmmaking, television production, and other kinetic displays, scrolling is sliding text, images or video across a monitor or display, vertically or horizontally. </p> <br>
+    <p>the action of moving displayed text or graphics up, down, or across on a computer screen in order to view different parts of them.</p> <br>7
+    <div id="container">
+       <div class="purple"></div> 
+        <div class="pink"></div>
+        <div class="purple"></div>
+        <div class="pink"></div>
+        <div class="purple"></div> 
+        <div class="pink"></div>
+        <div class="purple"></div>
+    </div>
+</body>
+</html>
